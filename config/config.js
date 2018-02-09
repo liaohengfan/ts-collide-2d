@@ -10,6 +10,13 @@ module.exports={
             entry:"./src/com/main.ts",
             template:'./src/htmls/index.html',
             filename:"./index.html"
+        },
+        {
+            title:"主页",
+            name:"circle-polygon",
+            entry:"./src/com/circlePolygon/CircleCollide.ts",
+            template:'./src/htmls/circle-polygon.html',
+            filename:"./circle-polygon.html"
         }
     ]
 };
