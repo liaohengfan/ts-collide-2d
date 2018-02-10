@@ -1,9 +1,9 @@
 import '../styles/common.less';
 import '../styles/main.less';
 import {Common} from "./Common";
-import {Shape} from "./collide/Shape";
-import {Point, Vector} from "./collide/Vector";
-import {Polygon} from "./collide/Polygon";
+import {Shape} from "./collide/shapes/Shape";
+import {Point, Vector} from "./collide/core/Vector";
+import {Polygon} from "./collide/shapes/Polygon";
 
 /**
  * 碰撞检测demo

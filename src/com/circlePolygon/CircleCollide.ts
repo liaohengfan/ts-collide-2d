@@ -2,9 +2,9 @@ import '../../styles/common.less';
 import '../../styles/circle-polygon.less';
 
 import {Common} from "../Common";
-import {Point} from "../collide/Vector";
-import {Shape} from "../collide/Shape";
-import {Polygon} from "../collide/Polygon";
+import {Point} from "../collide/core/Vector";
+import {Shape} from "../collide/shapes/Shape";
+import {Polygon} from "../collide/shapes/Polygon";
 
 /**
  * 圆形多边形碰撞检测
@@ -174,6 +174,25 @@ class CircleCollide{
         this.canvas.height=this.container.clientHeight;
     }
 }
+
+class VideoTest{
+    constructor(){
+        let video:HTMLVideoElement=(document.getElementById('videoView') as HTMLVideoElement);
+        let btn:HTMLDivElement=(document.getElementById('video_play_btn') as HTMLDivElement);
+        let play:boolean=false;
+        btn.addEventListener('click',()=>{
+            if(play){
+                play=false;
+                video.pause();
+            }else{
+                play=true;
+                video.play();
+            }
+        });
+    }
+}
+
 window.onload=()=>{
-    new CircleCollide();
+    //new CircleCollide();
+    new VideoTest();
 };

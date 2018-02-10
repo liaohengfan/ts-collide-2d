@@ -1,5 +1,5 @@
 module.exports={
-    dev_host:"localhost",
+    dev_host:"192.168.40.227",
     dev_port:8090,
     favicon:'./src/images/favicon.ico',
     commonname:"common",
@@ -12,7 +12,7 @@ module.exports={
             filename:"./index.html"
         },
         {
-            title:"主页",
+            title:"圆形碰撞",
             name:"circle-polygon",
             entry:"./src/com/circlePolygon/CircleCollide.ts",
             template:'./src/htmls/circle-polygon.html',
