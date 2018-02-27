@@ -19,7 +19,6 @@ class CircleCollide{
     mouseDown:Point=new Point();
     lastDrag:Point=new Point();
     shapeBeingDragged:any=undefined;
-
     constructor(){
         /**
          * 初始化dom

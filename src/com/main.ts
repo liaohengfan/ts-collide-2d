@@ -21,6 +21,8 @@ class Main{
     lastDrag:Point=new Point();
     shapeBeingDragged:any=undefined;
     constructor(){
+
+        //123
         /**
          * 初始化dom
          */
